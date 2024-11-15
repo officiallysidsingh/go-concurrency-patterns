@@ -2,6 +2,8 @@
 A Step By Step Guide With Building Blocks For Go Concurrency Learning
 
 ## Concurrency Primitives
+### Go Concurrency Model
+![Go Concurrency Model Diagram](https://github.com/officiallysidsingh/go-concurrency-patterns/blob/main/go-concurrency-model.jpg?raw=true)
 ### 1. Go Routines
   - Used for **running concurrent processes** in golang.
   - You just need to add **"go"** keyword before any function. Yes, creating goroutines are as simple as that.
@@ -64,4 +66,7 @@ A Step By Step Guide With Building Blocks For Go Concurrency Learning
   - Read the **code & comments** to learn more about select.
 
 ### 2. Pipeline Pattern
-  - Seperating concerns to make code more modular and organized.
+  - This pattern deals with seperating the concerns to make code more modular and organized.
+  - Head to the folder **patterns/for-select-done**.
+  - Read the **code & comments** to learn more about select.
+  - In the code, both the goroutines work parallely where one pushes an element and that element is read by another and task is performed on that element.
